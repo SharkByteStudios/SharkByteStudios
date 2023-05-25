@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div class="header">
+      <h1>Coding Classes</h1>
+      <p>Learn how to code!</p>
+    </div>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="other.html">Classes</a>
+      <a href="support.html">Support</a>
+    </div>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <p class="space">.</p>
+    <h3>We offer these basic coding classes:</h3>
+
+    <div class="container">
+      <img
+        src="Images/Screenshot 2023-05-24 080510.png"
+        alt="Languge"
+        class="image"
+      />
+      <div class="overlay">
+        <div class="text"><em>Python, HTML, C#, Lua</em></div>
+      </div>
+    </div>
+    <style>
+      .container {
+        position: relative;
+        width: 100%;
+      }
+    </style>
+    <p class="space">.</p>
+    <p class="space">.</p>
+
+    <form
+      action="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcSDZqhZSCnVflsPxqgtgNTJSDnjrPlSpStdQlxJlgCWbLgTdZkXsXhXstklSHQlKTdZwtLjx"
+      target="_blank"
+    >
+      <input class="button" type="submit" value="Buy a class!" />
+    </form>
+  </head>
+  <body>
+    <style>
+      .image {
+        display: block;
+        width: 50%;
+        height: auto;
+        padding: 3px;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: green;
+        overflow: hidden;
+        width: 50%;
+        height: 0;
+        transition: 0.5s ease;
+      }
+
+      .container:hover .overlay {
+        height: 100%;
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .space {
+        color: white;
+      }
+      .button {
+        border-radius: 3px;
+        background-color: green; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      .button:hover {
+        background-color: lightgreen;
+        color: lightgreen;
+      }
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: green;
+        color: white;
+        font-size: 30px;
+      }
+      .navbar {
+        background-color: green;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .navbar a:hover {
+        background-color: lightgreen;
+        color: lightgreen;
+      }
+      .navbar a.active {
+        background-color: lightblue;
+        color: lightblue;
+      }
+    </style>
+  </body>
+</html>
